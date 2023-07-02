@@ -34,8 +34,8 @@ function rollTheDice() {
     setTimeout(function () {
         const player1 = new Player();
         let $dice11 = player1.Numb();
-        $(".img1-1").attr("src", `../images/dice${$dice11[0]}.png`);
-        $(".img1-2").attr("src", `../images/dice${$dice11[1]}.png`);
+        $(".img1-1").attr("src", `./images/dice${$dice11[0]}.png`);
+        $(".img1-2").attr("src", `./images/dice${$dice11[1]}.png`);
         let $score1 = player1.diceConditions($dice11[0], $dice11[1])
         player1.score = $score1
         $(".Player1").html(`Score: ${$score1}`);
@@ -45,8 +45,8 @@ function rollTheDice() {
 
         const player2 = new Player();
         let $dice22 = player2.Numb();
-        $(".img2-1").attr("src", `../images/dice${$dice22[0]}.png`);
-        $(".img2-2").attr("src", `../images/dice${$dice22[1]}.png`);
+        $(".img2-1").attr("src", `./images/dice${$dice22[0]}.png`);
+        $(".img2-2").attr("src", `./images/dice${$dice22[1]}.png`);
         let $score2 = player2.diceConditions($dice22[0], $dice22[1])
         $(".Player2").html(`Score: ${$score2}`);
 
@@ -83,9 +83,9 @@ $("#roll").on("click", function () {
         $i++;
     } else if ($i === 4) {
         $("#roll").html("New Game");
-        $("#roll").css("backgroundColor", "#953341")
+        $("#roll").css("backgroundColor", "#CD4F3D")
         $('.content').slideToggle();
-        $(".img").attr("src", "../images/dice1.png");
+        $(".img").attr("src", "./images/dice1.png");
         $i = 1;
         $totals1 = 0;
         $totals2 = 0;
