@@ -424,14 +424,15 @@ main {
 main div > div {
   display: flex;
   flex-direction: column;
-  background-color: #2AA8A0;
+  background-image: linear-gradient(to right, #3cb3e2, rgb(253, 253, 253), rgba(253, 253, 253, 0));
   margin: 5px 0;
+  border-radius: 10px;
 }
 main div > div p {
-  color: #ffffff;
+  color: #4d502d;
   text-align: center;
   font-family: roboto-bold;
-  margin-left: 10px;
+  margin-left: 100px;
 }
 main div > div .tas {
   flex-direction: row;
